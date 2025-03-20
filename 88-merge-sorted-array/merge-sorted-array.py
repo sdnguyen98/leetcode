@@ -7,17 +7,17 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
-        midx = m - 1
-        nidx = n - 1 
+        mId = m - 1
+        nId = n - 1 
         right = m + n - 1
 
-        while nidx >= 0:
-            if midx >= 0 and nums1[midx] > nums2[nidx]:
-                nums1[right] = nums1[midx]
-                midx -= 1
+        while nId >= 0:
+            if mId >= 0 and nums1[mId] > nums2[nId]:
+                nums1[right] = nums1[mId]
+                mId -= 1
             else:
-                nums1[right] = nums2[nidx]
-                nidx -= 1
+                nums1[right] = nums2[nId]
+                nId -= 1
 
             right -= 1
         
