@@ -8,5 +8,5 @@ function twoSum(nums: number[], target: number): number[] {
         }
         numMap.set(nums[i], i)
     }
-    return [];
+  
 };
