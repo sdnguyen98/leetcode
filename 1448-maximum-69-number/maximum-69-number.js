@@ -9,10 +9,10 @@ var maximum69Number  = function(num) {
     for(var i =0; i < numArray.length; i++){
         if(numArray[i]===6){
             numArray[i] = 9;
-            return Number(numArray.join(''));
+            let bignum = numArray.join('');
+            return Number(bignum)
         }
     }
     return num;
-
     
 };
